@@ -1,0 +1,10 @@
+<div class="container">
+
+<% @list.movies.each do |movie| %>
+<%= movie.title %>
+<% end %>
+
+<%= link_to 'Back to the List', lists_path %>
+<%= link_to 'Add a new Bookmark', new_list_bookmark_path(@list) %>
+
+</div>
