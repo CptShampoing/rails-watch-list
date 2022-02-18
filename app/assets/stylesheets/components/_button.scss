@@ -1,0 +1,44 @@
+// .btn-neon {
+//   width: 200px;
+//   padding: 15px;
+//   font-size: 12px;
+//   color: #15f4ee;
+//   font-weight: 400;
+//   border: 5px solid #15f4ee;
+//   text-transform: uppercase;
+//   cursor: pointer;
+//   border-radius: 100px;
+//   transition: 1.5s;
+//   color: #15f4ee;
+//   text-decoration: none;
+// }
+
+// .btn-neon:hover {
+//     box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+//     text-decoration: none;
+//     color: #15f4ee;
+// }
+
+.btn-neon {
+margin: auto;
+padding-right: 1.5rem;
+padding-left: 1.5rem;
+font-size: 1rem;
+line-height: 3rem;
+text-decoration: none;
+color: white;
+text-transform: uppercase;
+letter-spacing: 2px;
+background-image: linear-gradient(160deg, #ff0000, #ec008c);
+border-radius: 30px;
+cursor: pointer;
+user-select: none;
+box-shadow: 0 0 0 0 #ec008c, 0.5rem 0.5rem 30px #13092d;
+transition: box-shadow 0.6s;
+}
+
+.btn-neon:hover {
+  box-shadow: 0 0 60px 2px #ec008c, 0.5rem 0.5rem 30px #13092d;
+  text-decoration: none;
+  color: white;
+}

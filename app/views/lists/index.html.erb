@@ -1,18 +1,20 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://p4.wallpaperbetter.com/wallpaper/287/620/954/hulk-avengers-age-of-ultron-the-avengers-wallpaper-preview.jpg);">
-  <div class="container">
-    <h1>Your List of Movies</h1>
-  </div>
+    <div class="container">
+      <h1>Your List of Movies</h1>
+    </div>
 </div>
 
+<div class="container">
 
-<div class="cards-grid">
-    <% @lists.each do |list| %>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-      <%= link_to list.name, list %>
-    </div>
-    <% end %>
+  <div class="cards-grid">
+      <% @lists.each do |list| %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+        <%= link_to list.name, list, class:"title-card"%>
+      </div>
+      <% end %>
 
-  <%= link_to 'Add a new List', new_list_path %>
+    <%= link_to 'Add a new List', new_list_path, class:"btn-neon" %>
 
 
+  </div>
 </div>

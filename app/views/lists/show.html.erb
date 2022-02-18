@@ -1,10 +1,26 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://p4.wallpaperbetter.com/wallpaper/287/620/954/hulk-avengers-age-of-ultron-the-avengers-wallpaper-preview.jpg);">
+    <div class="container">
+      <h1>Your List of Movies</h1>
+    </div>
+</div>
+
 <div class="container">
 
 <% @list.movies.each do |movie| %>
-<%= movie.title %>
-<% end %>
+    <div class="card-product my-5">
+      <img src="<%= movie.poster_url%>" />
+      <div class="card-product-infos">
+      <h2><%= movie.title %></h2>
+      <p><%= movie.overview %></p>
+      </div>
+    </div>
+  <% end %>
 
-<%= link_to 'Back to the List', lists_path %>
-<%= link_to 'Add a new Bookmark', new_list_bookmark_path(@list) %>
+
+<%= link_to 'Back to the List', lists_path, class:"btn-neon" %>
+
+
+<%= link_to 'Add a new Bookmark', new_list_bookmark_path(@list), class:"btn-neon" %>
+
 
 </div>
